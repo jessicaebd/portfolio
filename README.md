@@ -1,3 +1,4 @@
 # jessicaebd's portfolio
 
--   Ini nantinya portfolio. Rencananya pake bootstrap aja.
+-   Ini nantinya portfolio.
+-   Rencananya pake bootstrap aja.
