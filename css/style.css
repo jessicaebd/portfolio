@@ -42,3 +42,18 @@ nav {
 .text-green {
     color: var(--green);
 }
+
+.btn-green-outline {
+    color: var(--green);
+    outline: 2px solid var(--green);
+}
+
+.btn-green-outline:hover {
+    color: var(--darkblue);
+    background-color: var(--green);
+}
+
+.btn-green {
+    color: var(--darkblue);
+    background-color: var(--green);
+}
