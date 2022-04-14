@@ -12,16 +12,23 @@
     <body>
         <!-- Navbar -->
         <header
-            class="absolute top-0 left-0 z-10 flex w-full items-center bg-slate-900"
+            class="fixed top-0 left-0 z-[9999] flex w-full items-center bg-white bg-transparent bg-opacity-70 shadow-md backdrop-blur-sm dark:bg-dark dark:bg-opacity-50"
         >
             <div class="container">
                 <div class="relative flex items-center justify-between">
-                    <div class="px-4">
-                        <a href="#home" class="block py-6 text-lg font-bold"
-                            ><span class="text-teal-600">jessica</span
-                            ><span class="text-teal-800">ebd</span></a
+                    <div class="px-8 sm:px-16">
+                        <a
+                            href="#home"
+                            class="block py-4 text-lg font-bold sm:py-6"
                         >
+                            <span class="text-teal-400 dark:text-green-300"
+                                >jessica</span
+                            ><span class="text-teal-600 dark:text-teal-500"
+                                >ebd</span
+                            >
+                        </a>
                     </div>
+
                     <div class="flex items-center px-4">
                         <button
                             id="hamburger"
@@ -42,37 +49,38 @@
 
                         <nav
                             id="nav-menu"
-                            class="dark:bg-dark absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-2 shadow-lg dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
+                            class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-2 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
                         >
                             <ul class="block lg:flex">
                                 <li class="group">
                                     <a
                                         href="#home"
-                                        class="text-dark group-hover:text-primary mx-8 flex py-3 text-base dark:text-white"
+                                        class="group-hover:text-primary mx-8 flex py-3 text-base font-semibold text-dark dark:text-white"
                                         >Home</a
                                     >
                                 </li>
                                 <li class="group">
                                     <a
                                         href="#about"
-                                        class="text-dark group-hover:text-primary mx-8 flex py-3 text-base dark:text-white"
+                                        class="group-hover:text-primary mx-8 flex py-3 text-base font-semibold text-dark dark:text-white"
                                         >About Me</a
                                     >
                                 </li>
                                 <li class="group">
                                     <a
                                         href="#portfolio"
-                                        class="text-dark group-hover:text-primary mx-8 flex py-3 text-base dark:text-white"
+                                        class="group-hover:text-primary mx-8 flex py-3 text-base font-semibold text-dark dark:text-white"
                                         >Portfolio</a
                                     >
                                 </li>
                                 <li class="group">
                                     <a
                                         href="#contact"
-                                        class="text-dark group-hover:text-primary mx-8 flex py-3 text-base dark:text-white"
+                                        class="group-hover:text-primary mx-8 flex py-3 text-base font-semibold text-dark dark:text-white"
                                         >Contact</a
                                     >
                                 </li>
+                                <!-- Dark Toggle Button -->
                                 <li class="mt-3 flex items-center pl-8">
                                     <div class="flex">
                                         <input
@@ -91,6 +99,7 @@
                                         </label>
                                     </div>
                                 </li>
+                                <!-- End of Dark Toggle Button -->
                             </ul>
                         </nav>
                     </div>
@@ -100,17 +109,21 @@
         <!-- End of Navbar -->
 
         <!-- Home -->
-        <section id="home" class="pt-36 dark:bg-slate-800">
+        <section id="home" class="pt-32 dark:bg-dark sm:pt-36">
             <div class="container">
                 <div class="flex flex-wrap">
                     <div class="w-full text-center">
-                        <h1 class="text-base font-semibold">
+                        <h1 class="text-base font-semibold dark:text-white">
                             Hello, I'm
-                            <span class="block p-4 text-6xl font-bold"
+                            <span
+                                class="block p-4 text-4xl font-bold sm:text-6xl"
                                 >Jessica Natalia</span
                             >
                         </h1>
-                        <h2 class="mb-10 text-sm font-semibold text-gray-500">
+
+                        <h2
+                            class="mb-10 text-sm font-semibold text-gray-500 dark:text-gray-200"
+                        >
                             Computer Science Student
                         </h2>
 
@@ -154,9 +167,9 @@
         <!-- End of Home -->
 
         <!-- About Me -->
-        <section id="about" class="pt-24">
+        <section id="about" class="pt-24 dark:bg-dark">
             <div class="container">
-                <div class="w-full p-10 text-center">
+                <div class="w-full p-6 text-center sm:p-10">
                     <h1 class="text-sm font-semibold text-gray-500">Profile</h1>
                     <h2 class="text-2xl font-bold text-teal-500">About Me</h2>
                 </div>
@@ -180,43 +193,43 @@
                             class="grid grid-cols-3 gap-2 sm:grid-cols-4 sm:gap-8"
                         >
                             <div
-                                class="block rounded-lg border border-gray-200 p-6 text-center shadow-md hover:bg-gray-100"
+                                class="group block rounded-lg border border-gray-200 p-6 text-center shadow-md hover:bg-gray-100 dark:border-2 dark:border-slate-600 dark:bg-slate-800 dark:hover:bg-slate-500"
                             >
                                 <h5
-                                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900"
+                                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-200 dark:group-hover:text-white"
                                 >
                                     GPA
                                 </h5>
                                 <p
-                                    class="font-normal text-gray-700 dark:text-gray-400"
+                                    class="font-normal text-gray-700 dark:text-gray-300 dark:group-hover:text-white"
                                 >
                                     3.95
                                 </p>
                             </div>
                             <div
-                                class="block rounded-lg border border-gray-200 p-6 text-center shadow-md hover:bg-gray-100"
+                                class="group block rounded-lg border border-gray-200 p-6 text-center shadow-md hover:bg-gray-100 dark:border-2 dark:border-slate-600 dark:bg-slate-800 dark:hover:bg-slate-500"
                             >
                                 <h5
-                                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900"
+                                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-200 dark:group-hover:text-white"
                                 >
                                     GPA
                                 </h5>
                                 <p
-                                    class="font-normal text-gray-700 dark:text-gray-400"
+                                    class="font-normal text-gray-700 dark:text-gray-300 dark:group-hover:text-white"
                                 >
                                     3.95
                                 </p>
                             </div>
                             <div
-                                class="block rounded-lg border border-gray-200 p-6 text-center shadow-md hover:bg-gray-100"
+                                class="group block rounded-lg border border-gray-200 p-6 text-center shadow-md hover:bg-gray-100 dark:border-2 dark:border-slate-600 dark:bg-slate-800 dark:hover:bg-slate-500"
                             >
                                 <h5
-                                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900"
+                                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-200 dark:group-hover:text-white"
                                 >
                                     GPA
                                 </h5>
                                 <p
-                                    class="font-normal text-gray-700 dark:text-gray-400"
+                                    class="font-normal text-gray-700 dark:text-gray-300 dark:group-hover:text-white"
                                 >
                                     3.95
                                 </p>
@@ -226,9 +239,8 @@
                         <div
                             class="flex w-full items-center justify-center py-12 px-10 sm:px-0 sm:pr-40"
                         >
-                            <!-- <div class="bg-lime-300 w-10 h-10"></div> -->
                             <p
-                                class="block text-justify text-base font-semibold"
+                                class="block text-justify text-base dark:text-gray-200"
                             >
                                 Hi! I am Jess. Currently, I am in my 2nd year as
                                 a Computer Science Student at Bina Nusantara
