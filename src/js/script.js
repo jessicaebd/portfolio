@@ -15,23 +15,6 @@ window.onscroll = function() {
     }
 }
 
-// Hamburger
-const hamburger = document.querySelector('#hamburger');
-const navMenu = document.querySelector('#nav-menu');
-
-hamburger.addEventListener('click', function() {
-    hamburger.classList.toggle('hamburger-active');
-    navMenu.classList.toggle('hidden');
-});
-
-// Klik di luar hamburger
-window.addEventListener('click', function (e) {
-    if(e.target != hamburger && e.target != navMenu) {
-        hamburger.classList.remove('hamburger-active');
-        navMenu.classList.add('hidden');
-    }
-});
-
 //  Darkmode Toggle
 const darkToggle = document.querySelector('#dark-toggle')
 const html = document.querySelector('html')
@@ -43,3 +26,5 @@ darkToggle.addEventListener('click', function() {
         html.classList.remove('dark')
     }
 })
+
+
