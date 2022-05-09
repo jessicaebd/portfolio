@@ -21,3 +21,11 @@
 #dark-toggle:checked ~ label div.toggle-circle {
     @apply translate-x-3;
 }
+
+.active {
+    @apply bg-teal-500 text-gray-100 dark:bg-teal-500;
+}
+
+.filter-hover {
+    @apply hover:bg-gray-100 hover:text-teal-700 dark:hover:bg-gray-800 dark:hover:text-gray-100;
+}
